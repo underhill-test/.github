@@ -1,0 +1,96 @@
+name: Bug Report
+description: File a bug report.
+title: "[Bug]: "
+labels: ["bug"]
+projects: ["h5p/6"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Give a simple description that describes the error
+    validations:
+      required: true
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Give us a step-by-step instruction on how to reproduce the error. Please provide a link to a public test content and, if applicable, screenshots/screen recordings.
+      placeholder: "1. <first step>"
+    validations:
+      required: true
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      multiple: true
+      options:
+        - h5p.com
+        - Wordpress
+        - Drupal
+        - Moodle
+        - Other
+      default: 0
+    validations:
+      required: false
+  - type: dropdown
+    id: lms
+    attributes:
+      label: LMS
+      multiple: true
+      options:
+        - Brightspace
+        - Canvas
+        - Blackboard
+        - Moodle
+        - Other
+      default: 0
+    validations:
+      required: false
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: What browsers are you seeing the problem on?
+      multiple: true
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: What Operating System are you seeing the problem on?
+      multiple: true
+      options:
+        - Windows 11
+        - Windows 10
+        - Windows < 10
+        - macOS 15
+        - macOS 14
+        - macOS < 14
+        - Linux (Debian)
+        - Linux (RPM)
+        - Linux (Other)
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      render: shell
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      options:
+        - label: I agree to follow this project's [Code of Conduct](https://github.com/h5p/h5p-example-contribution/blob/master/CODE_OF_CONDUCT.md)
+          required: true

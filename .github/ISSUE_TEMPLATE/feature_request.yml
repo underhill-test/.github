@@ -1,0 +1,24 @@
+name: Feature request
+description: Request for a feature or improvement
+title: "[Feature]: "
+labels: ["feature"]
+projects: ["h5p/6"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to suggest/request a new feature!
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Give a simple description that describes the new feature and what benefits it has
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      options:
+        - label: I agree to follow this project's [Code of Conduct](https://github.com/h5p/h5p-example-contribution/blob/master/CODE_OF_CONDUCT.md)
+          required: true
