@@ -1,15 +1,13 @@
-# Pull Request
-
 Thank you for your interest in contributing to H5P! 🎉  
 Please fill in the below sections to make your pull request:
 
 **What kind of change does this PR introduce?**
 (Bug fix, feature, docs update, ...)
 
-**What is the current behavior?**
+**What is the current behaviour?**
 (You can also link to an open issue here)
 
-**What is the new behavior?**
+**What is the new behaviour?**
 
 ## PR Checklist
 
